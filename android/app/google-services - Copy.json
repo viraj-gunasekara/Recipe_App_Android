@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1031107829694",
+    "project_id": "flutter-androidstudio",
+    "storage_bucket": "flutter-androidstudio.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031107829694:android:b0bd2eb74c6c99a167e3ef",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app_viraj"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "<firebasekeygoeshere>"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
