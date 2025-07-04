@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_viraj/Utils/constants.dart';
 import 'package:iconsax/iconsax.dart';
+import 'my_app_home_screen.dart';
 
 class AppMainScreen extends StatefulWidget {
   const AppMainScreen({super.key});
@@ -14,6 +15,12 @@ class _AppMainScreenState extends State<AppMainScreen> {
   late final List<Widget> page;
   @override
   void initState(){
+    page = [
+      const MyAppHomeScreen(),
+      navBarPage(Iconsax.heart5),
+      navBarPage(Iconsax.calendar5),
+      navBarPage(Iconsax.setting_21),
+    ];
     super.initState();
   }
   @override
@@ -49,6 +56,7 @@ class _AppMainScreenState extends State<AppMainScreen> {
           BottomNavigationBarItem(icon: Icon(selectedIndex == 3 ? Iconsax.setting_21 : Iconsax.setting_2), label: "Setting"),
         ],
       ),
+      body: page[selectedIndex],
     );
   }
 
